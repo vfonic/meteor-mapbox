@@ -1,48 +1,27 @@
-/* Copyright (c) 2014 Paulo Sérgio Borges de Oliveira Filho
- *
- * Permission is hereby granted, free of charge, to any person obtaining a
- * copy of this software and associated documentation files (the "Software"),
- * to deal in the Software without restriction, including without limitation
- * the rights to use, copy, modify, merge, publish, distribute, sublicense,
- * and/or sell copies of the Software, and to permit persons to whom the
- * Software is furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
- * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
- * DEALINGS IN THE SOFTWARE.
- */
-
 var FILES = {
   mapbox: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/v2.2.3/mapbox.js'],
-    css:  ['https://api.tiles.mapbox.com/mapbox.js/v2.2.3/mapbox.css'],
+    js:   ['https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'],
+    css:  ['https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css'],
   },
 
   mapboxgl: {
-    js:   ['https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.1/mapbox-gl.js'],
-    css:  ['https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.1/mapbox-gl.css'],
+    js:   ['https://api.mapbox.com/mapbox-gl-js/v0.24.0/mapbox-gl.js'],
+    css:  ['https://api.mapbox.com/mapbox-gl-js/v0.24.0/mapbox-gl.css'],
   },
 
   turf: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.2/turf.min.js'],
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/turf/v2.0.2/turf.min.js'],
     css:  []
   },
 
   directions: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/mapbox-directions.js/v0.4.0/mapbox.directions.js'],
-    css:  ['https://api.tiles.mapbox.com/mapbox.js/plugins/mapbox-directions.js/v0.4.0/mapbox.directions.css']
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/mapbox-directions.js/v0.4.0/mapbox.directions.js'],
+    css:  ['https://api.mapbox.com/mapbox.js/plugins/mapbox-directions.js/v0.4.0/mapbox.directions.css']
   },
 
   zoomslider: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.js'],
-    css:  ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.css']
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.js'],
+    css:  ['https://api.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.css']
   },
 
   pip: {
@@ -51,25 +30,24 @@ var FILES = {
   },
 
   osm: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-osm/v0.1.0/leaflet-osm.js'],
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-osm/v0.1.0/leaflet-osm.js'],
     css:  []
   },
 
   omnivore: {
-    js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'],
-    css:  ['https://api.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.css']
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js']
   },
 
   minimap: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.js'],
-    css:  ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.css']
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.js'],
+    css:  ['https://api.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.css']
   },
 
   markercluster: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'],
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'],
     css:  [
-      'https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css',
-      'https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css'
+      'https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css',
+      'https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css'
     ],
   },
 
@@ -77,56 +55,56 @@ var FILES = {
   // https://www.mapbox.com/mapbox.js/example/v1.0.0/leaflet-locatecontrol/
   locate: {
     js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js'],
-    css:  ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.css']
+    css:  ['https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.mapbox.css']
   },
 
   label: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'],
-    css:  ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css']
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'],
+    css:  ['https://api.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css']
   },
 
   image: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-image/v0.0.4/leaflet-image.js'],
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-image/v0.0.4/leaflet-image.js'],
     css:  []
   },
 
   heat: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-heat/v0.1.3/leaflet-heat.js'],
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-heat/v0.1.3/leaflet-heat.js'],
     css:  []
   },
 
   hash: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js'],
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js'],
     css:  []
   },
 
   geodesy: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-geodesy/v0.1.0/leaflet-geodesy.js'],
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-geodesy/v0.1.0/leaflet-geodesy.js'],
     css:  []
   },
 
   fullscreen: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.4/Leaflet.fullscreen.min.js'],
-    css:  ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.4/leaflet.fullscreen.css']
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'],
+    css:  ['https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css']
   },
 
   draw: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.2.2/leaflet.draw.js'],
-    css:  ['https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.2.2/leaflet.draw.css']
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.2.3/leaflet.draw.js'],
+    css:  ['https://api.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.2.3/leaflet.draw.css']
   },
 
   geojsonExtend: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/geojson-extent/v0.0.1/geojson-extent.js'],
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/geojson-extent/v0.0.1/geojson-extent.js'],
     css:  []
   },
 
   geoViewport: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/geo-viewport/v0.1.1/geo-viewport.js'],
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/geo-viewport/v0.1.1/geo-viewport.js'],
     css:  []
   },
 
   arc: {
-    js:   ['https://api.tiles.mapbox.com/mapbox.js/plugins/arc.js/v0.1.0/arc.js'],
+    js:   ['https://api.mapbox.com/mapbox.js/plugins/arc.js/v0.1.0/arc.js'],
     css:  []
   }
 };
