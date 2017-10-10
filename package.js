@@ -1,8 +1,8 @@
 Package.describe({
-  name:     'natestrauser:mapbox',
+  name:     'vfonic:mapbox',
   summary:  'Mapbox.js with GL and plugins for Meteor apps',
-  version:  '2.4.0_1',
-  git:      'https://github.com/nate-strauser/meteor-mapbox.git'
+  version:  '3.1.1_1',
+  git:      'https://github.com/vfonic/meteor-mapbox.git'
 });
 
 Package.onUse(function (api) {
